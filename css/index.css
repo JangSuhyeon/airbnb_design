@@ -106,6 +106,7 @@ header {
     color:#717171;
 }
 .header-container .subMenu > li:last-child .person > .login-box {
+    display: none;
     position:absolute;
     top:53px;
     right:-8px;

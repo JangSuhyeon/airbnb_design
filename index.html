@@ -95,7 +95,12 @@
                     $('header').removeClass('scroll');
                 }
             });
-        })
+
+            // 로그인 박스 노출 여부
+            $('.header-container .subMenu .person').click(function () {
+                $('.header-container .subMenu .person > .login-box').toggle();
+            });
+        });
     </script>
 </body>
 </html>
