@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Aribnb</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/travel.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- 노토산스 -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- 스와이프 플러그인 -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="js/travel.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo"><img src="images/logo_pk.png"></a>
+            <ul class="mainMenu">
+                <li class="on"><a href="#none">숙소</a></li>
+                <li class="no"><a href="#none">체험</a></li>
+                <li class="no"><a href="#none">온라인 체험</a></li>
+            </ul>
+            <ul class="subMenu">
+                <li><a href="#none">호스트 되기</a></li>
+                <li><a href="#none"><i class="fas fa-globe"></i></a></li>
+                <li>
+                    <div class="hamburger"><i class="fas fa-bars"></i></div>
+                    <div class="person"><i class="fas fa-user-circle"></i></div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <h2 class="title">여행</h2>
+        <div class="tab">
+            <ul class="tabnav">
+              <li><a href="#tab01">예정된 예약</a></li>
+              <li><a href="#tab02">이전 예약</a></li>
+              <li><a href="#tab02">취소됨</a></li>
+            </ul>
+            <div class="tabcontent">
+              <div id="tab01">tab1 content</div>
+              <div id="tab02">tab2 content</div>
+              <div id="tab03">tab3 content</div>
+            </div>
+          </div>
+    </div>
+</body>
