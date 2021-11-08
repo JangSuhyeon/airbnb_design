@@ -5,7 +5,11 @@ header {
     border-bottom:1px solid #eee;
 }
 .header-container {
+    width:1370px;
+    margin:0 auto;
     max-width: none ;
+    left:auto;
+    transform: translateY(-50%);
 }
 .header-container .subMenu > li > a {
     color:#222222;
@@ -15,10 +19,8 @@ header {
 /* main */
 .main {
     position: relative;
-    width:100%;
-    padding:0 80px;
+    width:1370px;
     margin:130px auto 50px;
-    box-sizing: border-box;
 }
 .main > h2.title {
     position:relative;
