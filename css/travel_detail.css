@@ -173,3 +173,24 @@ header {
 .payment > p:last-child {
     letter-spacing: 1px;
 }
+
+
+/* 예약 취소하기 버튼 */
+.btn-container {
+    width:800px;
+    padding:24px;
+    margin:8px auto 0;
+    box-sizing: border-box;
+    background-color: #777;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px !important;
+    border-radius: 0 0 10px 10px;
+    text-align:center;
+    cursor: pointer;
+}
+.btn-container > a {
+    font-weight: bold;
+    color:#fff;
+}
+.btn-container:hover {
+    background-color: #666;
+}
