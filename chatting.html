@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatting</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/chatting.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- 노토산스 -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- 스와이프 플러그인 -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="js/travel.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo"><img src="images/logo_pk.png"></a>
+            <ul class="mainMenu">
+                <li class="on"><a href="#none">숙소</a></li>
+                <li class="no"><a href="#none">체험</a></li>
+                <li class="no"><a href="#none">온라인 체험</a></li>
+            </ul>
+            <ul class="subMenu">
+                <li><a href="#none">호스트 되기</a></li>
+                <li><a href="#none"><i class="fas fa-globe"></i></a></li>
+                <li>
+                    <div class="hamburger"><i class="fas fa-bars"></i></div>
+                    <div class="person"><i class="fas fa-user-circle"></i></div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <!-- 숙소 리스트 -->
+        <div class="list-container">
+            <h2>메시지</h2>
+            <div class="list">
+                <div class="msg on">
+                    <div class="img"><span><img src="images/h05.jpg"></span></div>
+                    <div class="info">
+                        <p class="name">경숙</p>
+                        <p class="text">예약 취소되었습니다. 감사합니다.</p>
+                        <p class="date"><span>예약취소</span> · <span>5월 27일 - 5월 29일</span></p>
+                    </div>
+                </div>
+                <div class="msg ">
+                    <div class="img"><span><img src="images/h05.jpg"></span></div>
+                    <div class="info">
+                        <p class="name">경숙</p>
+                        <p class="text">예약 취소되었습니다. 감사합니다.</p>
+                        <p class="date"><span>예약취소</span> · <span>5월 27일 - 5월 29일</span></p>
+                    </div>
+                </div>
+                <div class="msg">
+                    <div class="img"><span><img src="images/h05.jpg"></span></div>
+                    <div class="info">
+                        <p class="name">경숙</p>
+                        <p class="text">예약 취소되었습니다. 감사합니다.</p>
+                        <p class="date"><span>예약취소</span> · <span>5월 27일 - 5월 29일</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 호스트와 채팅 -->
+        <div class="chatting-container">
+            <div class="title">
+                <div class="host">
+                    <p>경숙</p>
+                    <span>응답 시간:1시간</span>
+                </div>
+                <div class="hide">세부 정보 숨기기</div>
+            </div>
+        </div>
+        <!-- 숙소 정보 -->
+        <div class="detail-container">
+            <div class="detail">
+                <h2 class="title">숙소 예약<i class="fas fa-times"></i></h2>
+                <div CLASS="container">
+                    <p class="sub"><span>Gyeongju-si</span> · <span>2021년 6월 24일 – 2021년 6월 25일</span></p>
+                    <h2 class="title">경숙님의 숙소</h2>
+                    <div class="thumb swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/h01.jpg"></div>
+                            <div class="swiper-slide"><img src="images/h02.jpeg"></div>
+                            <div class="swiper-slide"><img src="images/h03.jpg"></div>
+                        </div>
+                        <div class="swiper-button-next"><i class="fas fa-chevron-circle-right"></i></div>
+                        <div class="swiper-button-prev"><i class="fas fa-chevron-circle-left"></i></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <h2 class="address">시에나</h2>
+                    <div class="date-container">
+                        <div class="date">
+                            <h2>체크인</h2>
+                            <p>2021년 6월 24일 (목)</p>
+                            <p>오후 3:00</p>
+                        </div>
+                        <div class="date">
+                            <h2>체크아웃</h2>
+                            <p>2021년 6월 24일 (목)</p>
+                            <p>오후 3:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment">
+                <h2>결제 정보</h2>
+                <p class="title">총 비용</p>
+                <p>₩80870</p>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper(".thumb", {
+                touchRatio: 0,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+    </script>
+</body>
